@@ -13,11 +13,32 @@ body {
 }
 
 h1 {
-    font-size:  64px;
+    font-size: 64px;
     letter-spacing: 3px;
     text-shadow: 4px, 4px, 8px rgba(0, 0, 0, 6);
 }
 
 canvas {
     background-color: black;
+    display: block;
+}
+
+@media only screen and (max-width: 720px) {
+    canvas {
+        width: 100%;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    h1 {
+        display: none;
+    }
+}
+
+@media only screen and (max-height:480px) {
+    canvas {
+        height: 100vh;
+    }
 }
